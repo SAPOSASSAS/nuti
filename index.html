@@ -1,1 +1,1003 @@
-<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=https://dd2df022-bc67-4533-bb63-9321c6fba7d6-00-3nr6g8onworxo.kirk.replit.dev/">
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://autollantasnutibara.com/ -->
+<html lang="es" class="csstransforms csstransforms3d csstransitions js no-touch inlinesvg cssfilters svgfilters skrollr skrollr-desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="google-site-verification" content="">
+  <meta name="generator" content="CMS FENIX (info@fenixpuntonet.com)">
+  <meta name="author" content="FENIXPUNTONET">
+  <meta name="copyright" content="CMS FENIX (info@fenixpuntonet.com)">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="https://autollantasnutibara.com/fotos/Image/autollantas-nutibara.png">
+  <meta property="og:url" content="https://autollantasnutibara.com">
+  <meta property="og:description" content="Bienvenidos a  AUTOLLANTAS NUTIBARA">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bienvenidos a AUTOLLANTAS NUTIBARA</title>
+  <meta name="description" content="Bienvenidos a  AUTOLLANTAS NUTIBARA">
+  <meta name="keywords" content="">
+  <meta name="facebook-domain-verification" content="65hg0wwq6rc1yy4i84pacwsyxx9i6f">
+  <link rel="stylesheet" id="ux-interface-pagebuild-css" href="./index_files/pagebuild.css" type="text/css" media="screen">
+  <link rel="stylesheet" id="ux-interface-theme-style-css" href="./index_files/theme-style.php" type="text/css" media="screen">
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./index_files/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./index_files/slick.css">
+  <link rel="stylesheet" type="text/css" href="./index_files/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="./index_files/font-awesome.min.css">
+
+    <link href="./index_files/default.css" rel="stylesheet" type="text/css">
+    
+    <script src="./index_files/jquery.min.js.descarga"></script>
+    <script src="./index_files/getlenguaje.js.descarga"></script>
+
+
+<link rel="stylesheet" href="./index_files/widget.css" class="jv-css"><link rel="stylesheet" type="text/css" href="./index_files/omnichannelMenu.widget.css"></head>
+<body>
+  <!-- matriz.php -->
+  <!--- Sección de menú --->
+  
+
+<script>
+
+  /* Abrir ventana modal */
+  function abrirModalPage(){
+    element = document.getElementById("modalPage");
+    if(element.style.display="none"){
+      element.style.display="none"
+    }else{
+      element.style.display="block"
+    }
+  }
+  
+
+  get_lenguaje();
+
+  function get_lenguaje(){
+    url = '/php/lenguaje.php'
+    $.getJSON(url,	{
+        funcion:"get_lenguaje",
+      },
+      callback_get_lenguaje
+    );
+  }
+
+  function callback_get_lenguaje(data, textStatus, jqXHR){
+    //console.log(data)
+    //console.log("Lenguaje: ", data["lenguaje"])
+    
+    if(data["lenguaje"] == "en"){
+      document.getElementById("lengua").alt = "en"
+      document.getElementById("lengua").src = "/fotos/Image/banderas/en.png"
+    }else{
+      document.getElementById("lengua").alt = "es"
+      document.getElementById("lengua").src = "/fotos/Image/banderas/sp.png"
+    }
+    lenguaje = data["lenguaje"]
+  }
+
+
+  function traducir(texto){
+    url = '/php/lenguaje.php'
+    $.getJSON(url,	{
+        funcion:"traducir",
+        texto:texto,
+      },
+      callback_traducir
+    );
+  }
+  function callback_traducir(data, textStatus, jqXHR){
+    return(data)
+  }
+
+  
+  function get_lenguaje_js(){
+    //console.info("<get_lenguaje_js>")
+    url = '/php/lenguaje.php'
+    $.getJSON(url,	{
+        funcion:"get_lenguaje_js",        
+      },
+      callback_get_lenguaje_js
+    );
+  }
+  function callback_get_lenguaje_js(data, textStatus, jqXHR){
+    //console.log(data)
+  }
+
+  
+  function cambiar_lenguaje(l){
+    d = document.getElementById("lengua").src    
+    if(l == "es"){
+      l="en";
+      document.getElementById("lengua").alt = "en"
+      document.getElementById("lengua").src = "/fotos/Image/banderas/en.png"
+    }else{
+      l="es";
+      document.getElementById("lengua").alt = "es"
+      document.getElementById("lengua").src = "/fotos/Image/banderas/sp.png"
+    }
+    set_lenguaje(l)
+  }
+  function set_lenguaje(l){
+    url = '/php/lenguaje.php'
+    $.getJSON(url,	{
+        funcion:"set_lenguaje",
+        lenguaje:l,
+      },
+      callback_set_lenguaje
+    );
+  }    
+  function callback_set_lenguaje(data, textStatus, jqXHR){
+    location.reload();
+  }  
+</script>
+
+<link rel="stylesheet" type="text/css" href="./index_files/font-awesome.min.css">    
+
+	<!--Inicio Header-->
+	<header>
+
+    
+    <div class="barra-header-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="header-telefonos">
+            </div>
+          </div>
+          <div class="col">
+            <div class="header-telefonos">
+              <img alt="" src="./index_files/telefono.png" style="width: 27px; height: 27px;">
+<div class="d-none d-md-inline">Línea de atención:</div>
+<strong>3225040552</strong>            </div>
+          </div>
+          <div class="col-12 col-md-auto text-center text-md-right">
+            
+                  <a class="d-none d-md-inline redes-header-ico align-middle" href="https://api.whatsapp.com/send?phone=573225040552" target="_blank">
+                    <strong>Escríbenos ahora</strong> <i class="fa fa-whatsapp whatsapp pulse"></i>
+                  </a>            <div class="d-inline d-md-none mr-3">
+                          </div>
+		    <div class="d-inline align-middle"><a href="https://www.pagosvirtualesavvillas.com.co/personal/pagos/13785" target="_blank"><img alt="" src="./index_files/Boton-Blanco-PSE.png" style="height: 40px; width: 40px;"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="barra-header-bottom">
+            <div class="row align-items-center">
+              <div class="col-md-auto">
+                <div class="logo">
+                  <a href="https://autollantasnutibara.com/">
+                    <img alt="Autollantas Nutibara" src="./index_files/autollantas-nutibara.png">                  </a>
+                </div>
+              </div>
+              <div class="col-md">
+                <nav class="menu">
+                  <ul class="menu-ppal"><li class="activo"><a href="https://autollantasnutibara.com/" target="_self"> INICIO</a></li><li class=""><a href="https://autollantasnutibara.com/quienes-somos" target="_self"> NOSOTROS</a></li><li class=""><a href="https://autollantasnutibara.com/servicios" target="_self"> SERVICIOS</a></li><li class=""><a href="https://autollantasnutibara.com/productos" target="_self"> PRODUCTOS</a></li><li class=""><a href="https://autollantasnutibara.com/promociones" target="_self"> PROMOCIONES</a></li><li class=""><a href="https://autollantasnutibara.com/hablemos" target="_self"> HABLEMOS</a></li></ul>                </nav>
+                <!--Final menú-->
+                <button class="menuP">
+                  <span>MENÚ</span>
+                </button>
+              </div>
+              <div class="col-md-2 position-static">
+                <div class="carrito-div d-none d-md-block">
+                                <ul class="infoUsuario">
+                                      
+                    
+
+                                        
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img id="lengua" class="lengua" src="./index_files/sp.png" alt="es" onclick="cambiar_lenguaje(this.alt)">
+  
+		<div class="container">
+		</div>
+        
+    </header>
+    <!--Final Header-->
+    
+
+
+<link rel="stylesheet" type="text/css" href="./index_files/abanico.css">
+<link rel="stylesheet" href="./index_files/font-awesome(1).min.css">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+<script> 
+	$(document).ready(function(){		
+    $("[id=boton-icono]").hide();
+  })
+  
+  $(".abanico_nav").on("click", function() {
+      $(this).toggleClass("abanico-closed");
+
+      if ($(this).hasClass("abanico-closed")) {
+        $(".abanico-main.abanico_button a").html('<i id="main-icono" class="fa fa-phone"></i>');
+        $("[id=boton-icono]").hide();
+      } else {
+        $(".abanico-main.abanico_button a").html('<i id="main-icono" class="fa fa-phone"></i>');
+        $("[id=boton-icono]").show();        
+      }
+  })
+</script>  <!--- Sección de menú --->
+  <div class="principal">
+    <div id="skrollr-body">
+    <div id="main">  		  				<div id="content">  		  					<div id="post-2" class="post-2 page type-page status-publish hentry">  						  						      <div class="row-fluid">    						  						<div id="content_wrap" class="">  							  							<div class="content-wrap-inn">  							<div class="pagebuilder-wrap"><div class="fullwrap_moudle"><div class="row-fluid">             				                 <a name="cabezote" class="fullwidth-anchor-name"></a>                                      <div id="cabezote" class="fullwidth-wrap         top-space-80-in  bottom-space-42EYHgEzWEdjJgYKAu8VjC4DohVYUMbvZ6Ua45MgSaYBTFv3725expKB69YsjM6Utj99E6Sn3LpcxQ4mNrwfrJLM5NGbWiQ class="col-md-12 moudle    bottom-space-no" style=""> 						<a name="20201222-122255-186" class="20201222-122255-186"></a> 		            <link href="./index_files/camera.css" rel="stylesheet" type="text/css">             <script type="text/javascript" src="./index_files/camera.min.js.descarga"></script>             <script type="text/javascript" src="./index_files/jquery.easing.1.3.js.descarga"></script>                 <style>                     .pattern_10 .camera_overlayer{                         opacity:0.10;                     }                 </style> 				<div class="slider skrollable skrollable-between" data-0="margin-top: 0px;" data-500="margin-top: -200px;" style="margin-top: 0px;">                     <div class="camera_wrap camera_emboss pattern_10" id="camera_wrap_1" style="height: 875px; display: block; margin-bottom: 24px;"><div class="camera_fakehover"><div class="camera_src camerastarted"> 											<div data-src="/fotos/Image/cabezotesjq/Banner viajeros Goodyear.jpg" data-link="" data-target="0" data-thumb="/fotos/Image/cabezotesjq/Banner viajeros Goodyear.jpg"> 												</div> 											<div data-src="/fotos/Image/cabezotesjq/BANNER JUNIO 20 1 (1).jpg" data-link="" data-target="_self" data-thumb="/fotos/Image/cabezotesjq/BANNER JUNIO 20 1 (1).jpg"> 													"; 												</div> 											<div data-src="/fotos/Image/cabezotesjq/BANNER JUNIO 20 3.jpg" data-link="" data-target="_self" data-thumb="/fotos/Image/cabezotesjq/BANNER JUNIO 20 3.jpg"> 													<div class="ei-title fadeIn" style="visibility: hidden;">                 <div class="container">  <div class="row">  <div class="col-12 col-md-5">  <h3>En llantas, repuestos y mantenimiento para tu vehículo, te ofrecemos la mejor experiencia en servicio, calidad y garantía.</h3>    <h2>¿EN QUÉ PODEMOS ASESORARTE?</h2>  </div>  </div>  </div>                </div>"; 												</div> 											<div data-src="/fotos/Image/cabezotesjq/BANNER JUNIO 20 2.jpg" data-link="" data-target="_self" data-thumb="/fotos/Image/cabezotesjq/BANNER JUNIO 20 2.jpg"> 												</div> 									</div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none; z-index: 1;"><img src="./index_files/Banner viajeros Goodyear.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1920" height="890" style="visibility: visible; height: 882.12px; margin-left: 0px; margin-right: 0px; margin-top: -3.5599px; position: absolute; width: 1903px;"><div class="camerarelative" style="width: 1903px; height: 875px;"></div></div><div class="cameraSlide cameraSlide_1 cameracurrent" style="display: block; z-index: 999;"><img src="./index_files/BANNER JUNIO 20 1 (1).jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1920" height="890" style="visibility: visible; height: 882.12px; margin-left: 0px; margin-right: 0px; margin-top: -3.5599px; position: absolute; width: 1903px;"><div class="camerarelative" style="width: 1903px; height: 875px;"></div></div><div class="cameraSlide cameraSlide_2 cameranext" style="display: none;"><img src="https://autollantasnutibara.com/fotos/Image/cabezotesjq/BANNER%20JUNIO%2020%203.jpg?1713784124221" class="imgLoaded" data-alignment="" data-portrait="" width="1920" height="890" style="visibility: visible; height: 882.12px; margin-left: 0px; margin-right: 0px; margin-top: -3.5599px; position: absolute; width: 1903px;"><div class="camerarelative" style="width: 1903px; height: 875px;"></div></div><div class="cameraSlide cameraSlide_3"><div class="camerarelative" style="width: 1903px; height: 875px;"></div></div><div class="cameraSlide cameraSlide_4" style="z-index: 1; display: none;"><div class="camerarelative" style="width: 1903px; height: 875px;"></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent" style="display: none;"></div><div class="cameraContent cameracurrent" style="display: block;"><div class="ei-title fadeIn" style="visibility: visible; opacity: 1;">                 <div class="container">  <div class="row">  <div class="col-12 col-md-5">  <h3>En llantas, repuestos y mantenimiento para tu vehículo, te ofrecemos la mejor experiencia en servicio, calidad y garantía.</h3>    <h2>¿EN QUÉ PODEMOS ASESORARTE?</h2>  </div>  </div>  </div>                </div></div><div class="cameraContent"></div><div class="cameraContent"></div></div></div><div class="camera_pie"><canvas id="pie_0" width="38" height="38" style="position: absolute; z-index: 1002; right: 0px; top: 0px; display: block; opacity: 0.8;"></canvas></div><div class="camera_prev" style="opacity: 0;"><span></span></div><div class="camera_next" style="opacity: 0;"><span></span></div></div><div class="camera_pag"><ul class="camera_pag_ul"><li class="pag_nav_0" style="position:relative; z-index:1002"><span><span>0</span></span></li><li class="pag_nav_1 cameracurrent" style="position:relative; z-index:1002"><span><span>1</span></span></li><li class="pag_nav_2" style="position:relative; z-index:1002"><span><span>2</span></span></li><li class="pag_nav_3" style="position:relative; z-index:1002"><span><span>3</span></span></li></ul></div><div class="camera_loader" style="display: none; visibility: visible;"></div></div> 			<section class="buscador" id="id-buscador">
+	<div class="container">
+		<div class="row px-2 pt-2 pb-0 d-block d-md-none" style="background: #0A0D57;">
+		    <div class="col-12 mostrar-buscador py-2">BUSCADOR</div>
+		</div>
+		<div class="row">
+		    <div class="col-12 col-md-5 px-2 pt-2 pb-0" style="background: #0A0D57;">
+    		    <div class="row m-0">
+        			<div id="pst-1" class="col-6 pst-1 py-2" onclick="configBuscador(1)">
+        				<img src="./index_files/por-vehiculo.png"> POR VEHÍCULO
+        			</div>
+        			<div id="pst-2" class="col-6 pst-2 py-2" onclick="configBuscador(2)">
+        				<img src="./index_files/por-llanta.png"> POR LLANTA
+        			</div>
+    		    </div>
+		    </div>
+		</div>
+	</div>
+    <div class="container">
+		<div class="row" style="background: #0A0D57;">
+		<div class="col-12 p-2 buscar-por-vehiculo" id="buscar-por-vehiculo">
+			<form action="https://autollantasnutibara.com/buscar-por-vehiculo" method="get">
+				<div class="form-row">
+					<div class="col">
+						<select class="custom-select custom-select-lg" name="marcaVehiculo" id="marcaVehiculo" title="Marca" required="">
+							<option value="">MARCA</option>
+															<option value="1">CHEVROLET</option>
+															<option value="2">FORD</option>
+															<option value="10">HONDA</option>
+															<option value="3">HYUNDAI</option>
+															<option value="4">KIA</option>
+															<option value="5">MAZDA</option>
+															<option value="7">NISSAN</option>
+															<option value="6">RENAULT</option>
+															<option value="8">SUZUKI</option>
+															<option value="9">TOYOTA</option>
+													</select>
+					</div>
+					<div class="col-6 col-md">
+						<select class="custom-select custom-select-lg" name="modeloVehiculo" id="modeloVehiculo" title="ELIJA EL MODELO" required="">
+								<option value="">MODELO</option>			
+						</select>
+					</div>
+					<div class="col-6 col-md">
+						<select class="custom-select custom-select-lg" name="lineaVehiculo" id="lineaVehiculo" title="LINEA" required="">
+								<option value="">LÍNEA</option>		
+						</select>
+					</div>
+					<div class="col-6 col-md">
+						<select class="custom-select custom-select-lg" name="versionVehiculo" id="versionVehiculo" title="VERSION" required="">
+								<option value="">VERSIÓN</option>				
+						</select>
+					</div>
+					<div class="col mt-2 mt-md-0">
+						<button class="img-buscador btn btn-lg" type="submit" id="btnbuscavehi">
+						    BUSCAR <img src="./index_files/buscar.png">
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-12 p-2 buscar-por-llanta" id="buscar-por-llanta">
+			<div class="form-row">
+				<div class="col-6 col-md">
+					<select class="custom-select custom-select-lg" name="selmedida1" id="selmedida1" title="AUTOMÓVIL, CAMPERO Y CAMIONETA">
+						<option value="9999">TIPO</option>
+						<option value="Automóvil, Campero, Camioneta.">Automóvil, Campero, Camioneta.</option><option value="Liviano, Camión, Bus">Liviano, Camión, Bus</option>					</select>
+				</div>
+				<div class="col-6 col-md">
+					<select class="custom-select custom-select-lg" name="selancho1" id="selancho1" title="ANCHO">
+						<option value="9999">ANCHO</option>
+					</select>
+				</div>
+				<div class="col-6 col-md">
+					<select class="custom-select custom-select-lg" name="selperfil1" id="selperfil1" title="PERFIL">
+						<option value="9999">PERFIL</option>
+					</select>
+				</div>
+				<div class="col-6 col-md">
+					<select class="custom-select custom-select-lg" name="selrin1" id="selrin1" title="RIN">
+						<option value="9999">RIN</option>
+					</select>
+				</div>
+				<div class="col mt-2 mt-md-0">
+					<button class="img-buscador btn btn-lg" type="submit" id="btnbuscavehi" onclick="llamarproductosbusqueda1()">
+					    BUSCAR <img src="./index_files/buscar.png">
+					</button>
+				</div>
+			</div>
+		</div>
+		</div>
+    </div> 
+</section></div>             <script type="text/javascript">
+                jQuery(function() {
+                    jQuery('#camera_wrap_1').camera({
+						playPause: false,
+						height: '46%',
+						minHeight: '100px'
+					});
+                });
+            </script> 						</div> 		</div>            </div>         </div></div><div class="fullwrap_moudle"><div class="row-fluid">             				                 <a name="wrap-info1" class="fullwidth-anchor-name"></a>                                      <div id="wrap-info1" class="fullwidth-wrap         top-space-80-in  bottom-space-40-in" style="  background-color: #F3F3F3;      "> 			 				<div class="container"><div class="row-fluid">             			<div class="col-md-12 moudle    bottom-space-no" style=""> 				      <!-- client.php -->          <div class="contenidos">                         <div class="row align-items-center no-gutters">  <div class="col-md-4">  <h3>EXPERIENCIA</h3>  <img alt="Experiencia" src="./index_files/EXPERIENCIA-HOME.jpg">  <div class="text-home">  <p>Nuestra amplia trayectoria en el mercado automotriz está fundamentada en:</p>    <ul>  	<li>Personal altamente calificado, experimentado y estable.</li>  	<li>Alta experiencia y conocimiento de las tecnologías aplicadas en las llantas.</li>  	<li>La evolución y consolidación de nuestra cultura de servicio al cliente.</li>  </ul>  </div>  </div>    <div class="col-md-4">  <h3>BENEFICIOS</h3>  <img alt="Experiencia" src="./index_files/beneficios.jpg">  <div class="text-home">  <p>Nuestros clientes pueden experimentar:</p>    <ul>  	<li>La excelencia en nuestro servicio y atención.</li>  	<li>Nuestro alto compromiso con la calidad en los trabajos de mantenimiento.</li>  	<li>Garantía otorgada por los fabricantes en las llantas y repuestos.</li>  	<li>El respaldo de nuestra marca en servicios, con políticas claras de garantía.&nbsp;</li>  	<li>La solidez y trayectoria de nuestra marca, generando en los clientes un mayor grado de confianza en el mantenimiento de su vehículo.</li>  </ul>  </div>  </div>    <div class="col-md-4">  <h3>TECNOLOGÍA</h3>  <img alt="Experiencia" src="./index_files/tecnologia.jpg">  <div class="text-home">  <ul>  	<li>Somo distribuidores de llantas de las marcas Goodyear y Michelin, altamente reconocidas en el mercado por su desarrollo tecnológico y calidad.</li>  	<li>Contamos con equipos de la más moderna tecnología para prestación de los servicios de mantenimiento. &nbsp;</li>  	<li>Nuestro sistema almacena el historial de los servicios realizado y los productos instalados a su vehículo en cada visita a la serviteca. &nbsp;</li>  	<li>Para las flotas propietarias de vehículos pesados, brindamos el acompañamiento técnico y el seguimiento a cada una de las llantas instaladas, llevando el registro histórico en un software especializado. &nbsp;&nbsp;</li>  </ul>  </div>  </div>  </div>          </div>   			</div> 		</div></div>            </div>         </div></div><div class="fullwrap_moudle"><div class="row-fluid">             				                 <a name="wrap-blog" class="fullwidth-anchor-name"></a>                                      <div id="wrap-blog" class="fullwidth-wrap  fullwidth-text-shadow" style="  background-color: ;      "> 			 				<div class="row-fluid">             			<div class="col-md-12 moudle    bottom-space-no" style=""> 				      <!-- client.php -->          <div class="contenidos">                         <h2 style="text-align: center;"><a href="https://autollantasnutibara.com/noticias">NOTICIAS</a></h2>          </div>   			</div> 		</div><div class="row-fluid">             			<div class="col-md-12 moudle   bottom-space-no" style=""> 				<!-- standard_list blog.php --><div class="noticias slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>          <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 20614px; transform: translate3d(-1874px, 0px, 0px);"><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                   <img src="./index_files/0_1_Ventajas y características de los frenos ABS para vehículos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                         <h3>                           Ventajas y características de los frenos ABS para vehículos                      </h3>                     <p>El Sistema de Frenos Antibloqueo (ABS, por sus siglas en inglés, Anti-lock Braking System) es una tecnología de seguridad importante en los automóviles que ayuda a prevenir el bloqueo de las ruedas durante una frenada brusca o en condiciones de baja adherencia, como carreteras mojadas o con hielo.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                   <img src="./index_files/0_1_5 mitos que pueden afectar el rendimiento de los vehiculos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                         <h3>                           5 mitos que pueden afectar el rendimiento de tu vehículo                      </h3>                     <p>Si realizas alguna de estas acciones de la lista ¡PARA! Podrías estar dañando tu vehículo sin darte cuenta.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-current slick-active" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="0">                                   <img src="./index_files/0_1_Logo Autollantas.png">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="0">                                         <h3>                           ¡Autollantas Nutibara presenta su nuevo portal de compras online!                      </h3>                     <p>Presentamos nuestra nueva plataforma virtual en la que puedes comprar llantas para carro con envío gratuito a todo Colombia.&nbsp;</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="0">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-active" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="0">                                   <img src="./index_files/52_1_autos electricos desventajas.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="0">                                         <h3>                           Ventajas y desventajas de los autos eléctricos                       </h3>                     <p>Los autos eléctricos son cada vez más populares en todo el mundo y su tecnología cada día es más avanzada. Sin embargo, es importante tener en cuenta algunos aspectos clave sobre sus características y conveniencia. En este blog hablaremos sobre las ventajas y desventajas de los autos eléctricos.&nbsp;</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="0">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">                                   <img src="./index_files/51_1_como cuidar tu auto durante el verano.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">                                         <h3>                           Cómo cuidar tu auto en los meses de verano intenso                      </h3>                     <p>En este blog te dejamos algunos consejos para cuidar tu auto de las altas temperaturas y del calor intenso durante los meses de verano.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">                                   <img src="./index_files/50_1_chevrolet corvette rayo mcqueen.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">                                         <h3>                           Así son los carros de Homero Simpson, de Scooby Doo y de Rayo McQueen en la vida real                      </h3>                     <p><span style="font-size:18px;">¿Alguna vez te has preguntado cómo serían los icónicos carros de tus caricaturas favoritas si existieran en la vida real?<br>  <br>  En este blog te mostramos como son los carros de Homero Simpson, de Scooby Doo y de Rayo McQueen en la vida real&nbsp;</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">                                   <img src="./index_files/49_1_revisiones de rutina que pueden salvar tu vehículo (1).jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">                                         <h3>                           Revisiones de rutina que pueden salvar tu vehículo                      </h3>                     <p><span style="font-size:18px;">Al igual que nosotros necesitamos chequeos médicos regulares para mantener nuestro bienestar, nuestros automóviles también requieren atención periódica para asegurar un rendimiento óptimo y una larga vida útil.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">                                   <img src="./index_files/48_1_infracciones de transito desconocidas en colombia.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">                                         <h3>                           Infracciones de tránsito que probablemente no conocías en Colombia                      </h3>                     <p><span style="font-size:18px;">Más allá de las infracciones de tránsito comúnmente conocidas, existen ciertas transgresiones menos evidentes, pero igualmente importantes que podrían pasar desapercibidas.<br>  En este artículo, exploraremos algunas de estas infracciones menos conocidas con el objetivo de crear conciencia y fomentar una conducción más segura en nuestras carreteras.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">                                   <img src="./index_files/47_1_los mejores circuitos de la formula 1.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">                                         <h3>                           Los circuitos más representativos de la Fórmula 1                      </h3>                     <p><span style="font-size:16px;">La Fórmula 1 es la categoría de automovilismo de mayor prestigio y popularidad a nivel mundial. A lo largo de los años, se han disputado carreras en numerosos circuitos, cada uno con sus características únicas. En este blog te presentamos los circuitos más emblemáticos de la Fórmula 1.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">                                   <img src="./index_files/46_1_consejos para reducir la contaminacion de los vehiculos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">                                         <h3>                           Consejos para reducir la contaminación de los vehículos                      </h3>                     <p><span style="font-size:16px;">Cuidar de los vehículos de manera adecuada es fundamental para reducir su impacto en el medio ambiente. A continuación, te dejamos algunas prácticas y consejos que puedes aplicar para minimizar el impacto de tu vehículo en el medio ambiente</span><span style="font-size:18px;">.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                   <img src="./index_files/0_1_Ventajas y características de los frenos ABS para vehículos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                         <h3>                           Ventajas y características de los frenos ABS para vehículos                      </h3>                     <p>El Sistema de Frenos Antibloqueo (ABS, por sus siglas en inglés, Anti-lock Braking System) es una tecnología de seguridad importante en los automóviles que ayuda a prevenir el bloqueo de las ruedas durante una frenada brusca o en condiciones de baja adherencia, como carreteras mojadas o con hielo.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                   <img src="./index_files/0_1_5 mitos que pueden afectar el rendimiento de los vehiculos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                         <h3>                           5 mitos que pueden afectar el rendimiento de tu vehículo                      </h3>                     <p>Si realizas alguna de estas acciones de la lista ¡PARA! Podrías estar dañando tu vehículo sin darte cuenta.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="-1">                                   <img src="./index_files/0_1_Logo Autollantas.png">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="-1">                                         <h3>                           ¡Autollantas Nutibara presenta su nuevo portal de compras online!                      </h3>                     <p>Presentamos nuestra nueva plataforma virtual en la que puedes comprar llantas para carro con envío gratuito a todo Colombia.&nbsp;</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/autollantas-nutibara-presenta-su-nuevo-portal-de-compras-online" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="-1">                                   <img src="./index_files/52_1_autos electricos desventajas.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="-1">                                         <h3>                           Ventajas y desventajas de los autos eléctricos                       </h3>                     <p>Los autos eléctricos son cada vez más populares en todo el mundo y su tecnología cada día es más avanzada. Sin embargo, es importante tener en cuenta algunos aspectos clave sobre sus características y conveniencia. En este blog hablaremos sobre las ventajas y desventajas de los autos eléctricos.&nbsp;</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/ventajas-y-desventajas-de-los-autos-electricos-" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">                                   <img src="./index_files/51_1_como cuidar tu auto durante el verano.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">                                         <h3>                           Cómo cuidar tu auto en los meses de verano intenso                      </h3>                     <p>En este blog te dejamos algunos consejos para cuidar tu auto de las altas temperaturas y del calor intenso durante los meses de verano.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/como-cuidar-tu-auto-en-los-meses-de-verano-intenso" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">                                   <img src="./index_files/50_1_chevrolet corvette rayo mcqueen.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">                                         <h3>                           Así son los carros de Homero Simpson, de Scooby Doo y de Rayo McQueen en la vida real                      </h3>                     <p><span style="font-size:18px;">¿Alguna vez te has preguntado cómo serían los icónicos carros de tus caricaturas favoritas si existieran en la vida real?<br>  <br>  En este blog te mostramos como son los carros de Homero Simpson, de Scooby Doo y de Rayo McQueen en la vida real&nbsp;</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/asi-son-los-carros-de-homero-simpson-de-scooby-doo-y-de-rayo-mcqueen-en-la-vida-real" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">                                   <img src="./index_files/49_1_revisiones de rutina que pueden salvar tu vehículo (1).jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">                                         <h3>                           Revisiones de rutina que pueden salvar tu vehículo                      </h3>                     <p><span style="font-size:18px;">Al igual que nosotros necesitamos chequeos médicos regulares para mantener nuestro bienestar, nuestros automóviles también requieren atención periódica para asegurar un rendimiento óptimo y una larga vida útil.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/revisiones-de-rutina-que-pueden-salvar-tu-vehiculo" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">                                   <img src="./index_files/48_1_infracciones de transito desconocidas en colombia.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">                                         <h3>                           Infracciones de tránsito que probablemente no conocías en Colombia                      </h3>                     <p><span style="font-size:18px;">Más allá de las infracciones de tránsito comúnmente conocidas, existen ciertas transgresiones menos evidentes, pero igualmente importantes que podrían pasar desapercibidas.<br>  En este artículo, exploraremos algunas de estas infracciones menos conocidas con el objetivo de crear conciencia y fomentar una conducción más segura en nuestras carreteras.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/infracciones-de-transito-que-probablemente-no-conocias-en-colombia" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">                                   <img src="./index_files/47_1_los mejores circuitos de la formula 1.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">                                         <h3>                           Los circuitos más representativos de la Fórmula 1                      </h3>                     <p><span style="font-size:16px;">La Fórmula 1 es la categoría de automovilismo de mayor prestigio y popularidad a nivel mundial. A lo largo de los años, se han disputado carreras en numerosos circuitos, cada uno con sus características únicas. En este blog te presentamos los circuitos más emblemáticos de la Fórmula 1.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/los-circuitos-mas-representativos-de-la-formula-1" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">                                   <img src="./index_files/46_1_consejos para reducir la contaminacion de los vehiculos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">                                         <h3>                           Consejos para reducir la contaminación de los vehículos                      </h3>                     <p><span style="font-size:16px;">Cuidar de los vehículos de manera adecuada es fundamental para reducir su impacto en el medio ambiente. A continuación, te dejamos algunas prácticas y consejos que puedes aplicar para minimizar el impacto de tu vehículo en el medio ambiente</span><span style="font-size:18px;">.</span></p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/consejos-para-reducir-la-contaminacion-de-los-vehiculos" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                   <img src="./index_files/0_1_Ventajas y características de los frenos ABS para vehículos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">                                         <h3>                           Ventajas y características de los frenos ABS para vehículos                      </h3>                     <p>El Sistema de Frenos Antibloqueo (ABS, por sus siglas en inglés, Anti-lock Braking System) es una tecnología de seguridad importante en los automóviles que ayuda a prevenir el bloqueo de las ruedas durante una frenada brusca o en condiciones de baja adherencia, como carreteras mojadas o con hielo.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/ventajas-y-caracteristicas-de-los-frenos-abs-para-vehiculos" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div><div class="px-sm-5 slick-slide slick-cloned" itemscope="" itemtype="http://schema.org/NewsArticle" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 937px;">              <div class="blog-contenedor">               <a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                   <img src="./index_files/0_1_5 mitos que pueden afectar el rendimiento de los vehiculos.jpg">                                                </a><div class="campos"><a class="imagenA" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">                                         <h3>                           5 mitos que pueden afectar el rendimiento de tu vehículo                      </h3>                     <p>Si realizas alguna de estas acciones de la lista ¡PARA! Podrías estar dañando tu vehículo sin darte cuenta.</p>                     </a><a class="link ver-mas" href="https://autollantasnutibara.com/noticias/5-mitos-que-pueden-afectar-el-rendimiento-de-tu-vehiculo" tabindex="-1">CONOCE MÁS</a>                  </div>                                        </div>            </div></div></div>                                                                                                                                                                                                                  <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button></div>                 <script type="text/javascript">
+          jQuery(document).on('ready', function() {
+            var col = 2;
+            jQuery('.noticias').slick({
+              arrows: true,
+              slidesToShow: col,
+              slidesToScroll: col,
+              responsive: [{
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }]
+            });
+          });
+        </script>       			</div> 		</div>            </div>         </div></div><div class="fullwrap_moudle"><div class="row-fluid">             				                 <a name="wrap-sedes" class="fullwidth-anchor-name"></a>                                      <div id="wrap-sedes" class="fullwidth-wrap" style="  background-color: ;  background-size: cover;    background-image: url(/sadminc/modulos/matriz/wp-content/uploads/2017/08/02_DICIEMBRE.jpg);  background-attachment: scroll; " data-speed="19"> 			 				<div class="container"><div class="row-fluid">             			<div class="col-md-12 moudle    bottom-space-no" style=""> 				      <!-- client.php -->          <div class="contenidos">                         <h2 style="text-align: center;">NUESTRAS SEDES</h2>    <div class="row align-items-center">  <div class="col-md-4 mb-3 text-md-left"><strong>Serviteca Avenida 33</strong><br>  Calle 33 Nº 63B - 251<br>  Teléfono: 604 42EYHgEzWEdjJgYKAu8VjC4DohVYUMbvZ6Ua45MgSaYBTFv3725expKB69YsjM6Utj99E6Sn3LpcxQ4mNrwfrJLM5NGbWiQ-3 text-md-center"><strong>Serviteca San Diego</strong><br>  Carrera 45PrWcWBvSAXGj8bD2EAcwLJEf6Bkfw9Y1EknVsZCggqiNixWMwTX9HNJQ24FVfuLa4t8eXt1HPA1iUitADJLCoS5ua3WQRa></div>    <div class="col-md-4 mb-3 text-md-right"><strong>Serviteca Sabaneta</strong><br>  Calle 61 Sur Nº 48A - 75<br>  Teléfono: 604 448 3344<br>  Celular: <a href="tel:3104601382">310 4601382</a></div>  </div>    <div style="text-align: center;"><a class="link ver-mas" href="https://api.whatsapp.com/send?phone=573225040552" tabindex="0" target="_blank">CONTÁCTANOS <img alt="Whatsapp" src="./index_files/logo-whatsapp.png" style="width: 29px; height: 30px; vertical-align: text-bottom;"> </a></div>          </div>   			</div> 		</div></div>            </div>         </div></div>		<script type="text/javascript">
+            jQuery(document).ready(function(){
+                var ux_pb = new ThemePageBuilder();
+                ux_pb.init();
+            });
+        </script> 	</div>							</div><!--End content-wrap-inn-->  		  						</div><!--end content_wrap-->  						  						      </div>  		  					</div><!--end row-fluid-->  		  				</div><!--end content-->  		  			</div>    
+    
+      <script src="./index_files/slick.js.descarga" type="text/javascript"></script>
+      <!--- Sección de Creado por --->
+      <style>
+    #id-buscador {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        font-size: 1.2rem;
+    }
+    .buscar-por-llanta {
+        display: none;
+    }
+    .pst-1, .mostrar-buscador {
+        background: #FFC000;
+        color: #2E3180;
+        border-radius: 6px;
+        font-weight:bold;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .pst-2 {
+        border-radius: 6px;
+        font-weight:bold;
+        color: #2E3180;
+        cursor: pointer;
+    }
+    .img-buscador {
+        width: 100%;
+    }
+    #id-buscador.abierto {
+        max-height: 1000px;
+    }
+    
+    @media (max-width: 768px) {
+        #id-buscador {
+            max-height: 60px;
+            position: relative;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .pst-1 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+</style>
+<!--- Sección buscador --->
+	<script>
+    $( document ).ready(function() {
+		var header = $(".slider");
+		if(window.innerWidth >= 768) {
+			header.append($("#id-buscador"));
+		} else {
+		    $("#id-buscador").insertAfter(header);
+		}
+		$('.mostrar-buscador').on('click', function(e) {
+			e.preventDefault();
+			$('#id-buscador').toggleClass("abierto");
+		});
+    });
+		/* Abrir pestaña buscador*/
+		function configBuscador(p){
+			if(p==1){
+				document.getElementById("buscar-por-llanta").style.display="none"
+				document.getElementById("buscar-por-vehiculo").style.display="block"
+				document.getElementById("pst-1").style.background="#FFC000"
+				document.getElementById("pst-2").style.background="transparent"
+			}else{
+				document.getElementById("buscar-por-llanta").style.display="block"
+				document.getElementById("buscar-por-vehiculo").style.display="none"
+				document.getElementById("pst-2").style.background="#FFC000"
+				document.getElementById("pst-1").style.background="transparent"
+			}
+		}
+		
+    // This is our actual script
+    $('body').on('change', '#selperfil1', function() {
+      cambioelperfil1(1);
+    });
+    $('body').on('change', '#selancho1', function() {
+      cambioelancho1(1);
+    });
+    $('body').on('change', '#selrin1', function() {
+      cambioelrin1(1);
+    });
+    $('body').on('change', '#selmedida1', function() {
+      cambioelrin1(1);
+    });
+    	   
+    $('body').on('change', '#selperfil2', function() {
+      cambioelperfil1(2);
+    });
+    $('body').on('change', '#selancho2', function() {
+      cambioelancho1(2);
+    });
+    $('body').on('change', '#selrin2', function() {
+      cambioelrin1(2);
+    });
+    $('body').on('change', '#selmedida2', function() {
+      cambioelrin1(2);
+    });
+    function llamarproductosbusqueda1() {
+        
+         var strmedida = $('#selmedida1').val();      
+         var cadenaquery = "";
+    	 if (strmedida != "9999") {
+    		 cadenaquery = cadenaquery + "?tipovehiculo="+strmedida+"" ;
+    	 }
+    	 
+         var strancho = $('#selancho1').val();  	 
+    	 if (strancho != "9999") 
+    		 cadenaquery = cadenaquery + "&ancho="+strancho+"" ;
+         var strperfil = $('#selperfil1').val();  	 
+    	 if (strperfil != "9999") 
+    		 cadenaquery = cadenaquery + "&perfil="+strperfil+"";
+         var strrin = $('#selrin1').val();  	 
+    	 if (strrin != "9999") 
+    		 cadenaquery = cadenaquery + "&rin="+strrin+"";
+    	
+    	location.href = "/productos/"+cadenaquery;
+    }
+    function llamarproductosbusqueda2() {
+         var cadenaquery = "activo=1 and idcategoria=2 and ";
+         var strcaja = $('#selcaja1').val();
+    	 if (strcaja != "9999") {
+    		 cadenaquery = cadenaquery + "tipovehiculo='";
+    		 cadenaquery = cadenaquery.concat(strcaja) +  "' and "; 
+    	 }
+    	 
+         strmarcavehiculo = $('#selmarca1').val();  	 
+    	 if (strmarcavehiculo != "9999") 
+    		 cadenaquery = cadenaquery + "tblti_productos.idmarca = '" + strmarcavehiculo + "' and " ;
+    	 cadenaquery = cadenaquery + "1 ";
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+    location.href = "/productos/?mirar=" + xhttp.responseText;
+        //  document.getElementById("demo").innerHTML =
+          //this.responseText;
+        }
+      };
+      xhttp.open("GET", "/php/guardador.php?cad=" + cadenaquery, true);
+      xhttp.send();
+    }
+    function llamarproductosbusqueda3() {
+         var cadenaquery = "activo=1 and idcategoria=3 and ";
+         var strmarca = $('#selmarca2').val();
+    	 if (strmarca != "9999") {
+    		 cadenaquery = cadenaquery + "tblti_productos.idmarca='" + strmarca + "' and " ;
+    	 }
+    	 
+         var strmodelo = $('#selmodelo1').val();  	 
+    	 if (strmodelo != "9999") 
+    		 cadenaquery = cadenaquery + "modelo like '%" + strmodelo + "%' and " ;
+    	 
+         var strlinea = $('#sellinea1').val();  	 
+    	 if (strlinea != "9999") 
+    		 cadenaquery = cadenaquery + "linea like '%" + strlinea + "%' and " ;
+    	 
+         var strversion = $('#selversion1').val();  	 
+    	 if (strversion != "9999") 
+    		 cadenaquery = cadenaquery + "version='" + strversion + "' and " ;
+    	 
+    	 cadenaquery = cadenaquery + "1 ";
+    	 
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+    location.href = "/productos/?mirar=" + xhttp.responseText;
+        //  document.getElementById("demo").innerHTML =
+          //this.responseText;
+        }
+      };
+      xhttp.open("GET", "/php/guardador.php?cad=" + cadenaquery, true);
+      xhttp.send();
+    }
+    function llamarproductosbusqueda4() {
+        
+         var strmedida = $('#selmedida2').val();      
+         var cadenaquery = "activo=1 and idcategoria=1 and tipovehiculo='"+strmedida+"' and ";
+         var strmedida = $('#selmedida2').val();
+    	 if (strmedida != "9999") {
+    		 cadenaquery = cadenaquery + "tipovehiculo='"+strmedida+"' and " ;
+    	 }
+    	 
+         strancho = $('#selancho2').val();  	 
+    	 if (strancho != "9999") 
+    		 cadenaquery = cadenaquery + "ancho = '" + strancho + "' and " ;
+         strperfil = $('#selperfil2').val();  	 
+    	 if (strperfil != "9999") 
+    		 cadenaquery = cadenaquery + "perfil= '" + strperfil + "' and ";
+         strrin = $('#selrin2').val();  	 
+    	 if (strrin != "9999") 
+    		 cadenaquery = cadenaquery + "rin = '" + strrin + "' and ";
+    	 cadenaquery = cadenaquery + "1 ";
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+    //        alert(this.readyState);
+    //        alert(xhttp.responseText)
+    location.href = "/productos/?mirar=" + xhttp.responseText;
+        //  document.getElementById("demo").innerHTML =
+          //this.responseText;
+        }
+      };
+      xhttp.open("GET", "/php/guardador.php?cad=" + cadenaquery, true);
+      xhttp.send();
+    }
+    function llamarproductosbusqueda5() {
+         var cadenaquery = "activo=1 and idcategoria=2 and ";
+         var strcaja = $('#selcaja2').val();
+    	 if (strcaja != "9999") {
+    		 cadenaquery = cadenaquery + "tipovehiculo='";
+    		 cadenaquery = cadenaquery.concat(strcaja) +  "' and "; 
+    	 }
+    	 
+         strmarcavehiculo = $('#selmarca3').val();  	 
+    	 if (strmarcavehiculo != "9999") 
+    		 cadenaquery = cadenaquery + "tblti_productos.idmarca='" + strmarcavehiculo + "' and " ;
+    	 cadenaquery = cadenaquery + "1 ";
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+    location.href = "/productos/?mirar=" + xhttp.responseText;
+        //  document.getElementById("demo").innerHTML =
+          //this.responseText;
+        }
+      };
+      xhttp.open("GET", "/php/guardador.php?cad=" + cadenaquery, true);
+      xhttp.send();
+    }
+    function llamarproductosbusqueda6() {
+         var cadenaquery = "activo=1 and idcategoria=3 and ";
+         var strmarca = $('#selmarca4').val();
+    	 if (strmarca != "9999") {
+    		 cadenaquery = cadenaquery + "tblti_productos.idmarca='" + strmarca + "' and " ;
+    	 }
+    	 
+         var strmodelo = $('#selmodelo2').val();  	 
+    	 if (strmodelo != "9999") 
+    		 cadenaquery = cadenaquery + "modelo like '%" + strmodelo + "%' and " ;
+    	 
+         var strlinea = $('#sellinea2').val();  	 
+    	 if (strlinea != "9999") 
+    		 cadenaquery = cadenaquery + "linea like '%" + strlinea + "%' and " ;
+    	 
+         var strversion = $('#selversion2').val();  	 
+    	 if (strversion != "9999") 
+    		 cadenaquery = cadenaquery + "version='" + strversion + "' and " ;
+    	 
+    	 cadenaquery = cadenaquery + "1 ";
+    	 
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+    location.href = "/productos/?mirar=" + xhttp.responseText;
+        //  document.getElementById("demo").innerHTML =
+          //this.responseText;
+        }
+      };
+      xhttp.open("GET", "/php/guardador.php?cad=" + cadenaquery, true);
+      xhttp.send();
+    }
+    function cambioelperfil1(numero) {
+         var ancho = $('#selancho'+numero).val();
+         var rin = $('#selrin'+numero).val();
+     var perfil = $('#selperfil'+numero).val();
+     var medida = $('#selmedida'+numero).val();
+    var xhttp = new XMLHttpRequest();
+      var cadenaquery = "rin="+rin+"&ancho="+ ancho+"&perfil="+ perfil+"&medida="+ medida+"&opcion=3";
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+            $("#selancho"+numero).empty();
+            $("#selrin"+numero).empty();
+             $("#selperfil"+numero).empty();
+            var texto = "hola pues";
+            var str = JSON.stringify(this);
+            var respuesta  = this.responseText;  
+            var res = respuesta.split(")");
+            var res1 = res[0].split("=");
+            contador = 0;
+            
+            $("#selancho"+numero).append("<option value='9999'>" + "Ancho" + "</option>");
+            $("#selrin"+numero).append("<option value='9999'>" + "Rin" + "</option>");
+            $("#selperfil"+numero).append("<option value='9999'>" + "Perfil" + "</option>");        
+            
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selancho"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            var res1 = res[1].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selrin"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            var res1 = res[2].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selperfil"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            $("#selancho"+numero).val(ancho);
+            $("#selrin"+numero).val(rin);
+            $("#selperfil"+numero).val(perfil);
+        //  document.getElementById("demo").innerHTML =
+        }
+      };
+      xhttp.open("GET", "/php/devuelveelperfil.php?" + cadenaquery, true);
+      xhttp.send();
+    }
+    function cambioelancho1(numero) {
+         var ancho = $('#selancho'+numero).val();
+         var rin = $('#selrin'+numero).val();
+     var perfil = $('#selperfil'+numero).val();
+      var medida = $('#selmedida'+numero).val();
+    var xhttp = new XMLHttpRequest();
+      var cadenaquery = "rin="+rin+"&ancho="+ ancho+"&perfil="+ perfil+"&medida="+ medida+"&opcion=2";
+      //alert(cadenaquery);
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+            $("#selancho"+numero).empty();
+            $("#selrin"+numero).empty();
+             $("#selperfil"+numero).empty();
+            var texto = "hola pues";
+            var str = JSON.stringify(this);
+            var respuesta  = this.responseText;  
+            var res = respuesta.split(")");
+            var res1 = res[0].split("=");
+            contador = 0;
+            
+            $("#selancho"+numero).append("<option value='9999'>" + "Ancho" + "</option>");
+            $("#selrin"+numero).append("<option value='9999'>" + "Rin" + "</option>");
+            $("#selperfil"+numero).append("<option value='9999'>" + "Perfil" + "</option>");        
+            
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selrin"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            var res1 = res[1].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selperfil"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            
+            var res1 = res[2].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selancho"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            $("#selancho"+numero).val(ancho);
+            $("#selrin"+numero).val(rin);
+            $("#selperfil"+numero).val(perfil);
+        //  document.getElementById("demo").innerHTML =
+        }
+      };
+      xhttp.open("GET", "/php/devuelveelperfil.php?" + cadenaquery, true);
+      xhttp.send();
+    }
+    function cambioelrin1(numero) {
+         var ancho = $('#selancho'+numero).val();
+         var rin = $('#selrin'+numero).val();
+     var perfil = $('#selperfil'+numero).val();
+      var medida = $('#selmedida'+numero).val();
+    var xhttp = new XMLHttpRequest();
+      var cadenaquery = "rin="+rin+"&ancho="+ ancho+"&perfil="+ perfil+"&medida="+ medida+"&opcion=1";
+     
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 || this.status == 200) {
+            $("#selancho"+numero).empty();
+            $("#selrin"+numero).empty();
+             $("#selperfil"+numero).empty();
+            var texto = "hola pues";
+            var str = JSON.stringify(this);
+            var respuesta  = this.responseText;  
+            var res = respuesta.split(")");
+            var res1 = res[0].split("=");
+            contador = 0;
+            
+            $("#selancho"+numero).append("<option value='9999'>" + "Ancho" + "</option>");
+            $("#selrin"+numero).append("<option value='9999'>" + "Rin" + "</option>");
+            $("#selperfil"+numero).append("<option value='9999'>" + "Perfil" + "</option>");        
+            
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selancho"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            var res1 = res[1].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selperfil"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            var res1 = res[2].split("=");
+            contador = 0;
+            while (contador < res1.length) {
+                if (res1[contador] != "") {
+                   $("#selrin"+numero).append("<option value='"+ res1[contador] + "'>" + res1[contador] + "</option>");         
+                }
+                contador = contador + 1
+            }
+            
+            
+            $("#selancho"+numero).val(ancho);
+            $("#selrin"+numero).val(rin);
+            $("#selperfil"+numero).val(perfil);
+        //  document.getElementById("demo").innerHTML =
+        }
+      };
+      xhttp.open("GET", "/php/devuelveelperfil.php?" + cadenaquery, true);
+      xhttp.send();
+    }
+    		
+    $('body').on('change', '#marcaVehiculo', function(event) {
+    		event.preventDefault();
+    		// guardamos el valor en una variable
+    		var p_marcaVehiculo = $('#marcaVehiculo').val();
+    
+    		//enviamos los datos por post al archivo verMunicipios.php
+    		$.post(
+    			'/php/verModelo.php', {
+    			marcaVehiculo: p_marcaVehiculo,
+    		},
+    		function(data) {
+    			$('#modeloVehiculo').html(data);
+    		});
+    	});
+    							
+    	$('body').on('change', '#modeloVehiculo', function(event) {
+    		event.preventDefault();
+    		// guardamos el valor en una variable
+    		var p_marcaVehiculo = $('#marcaVehiculo').val();
+    		var p_modeloVehiculo = $('#modeloVehiculo').val();
+    
+    		//enviamos los datos por post al archivo verMunicipios.php
+    		$.post(
+    			'/php/verLinea.php', {
+    			marcaVehiculo: p_marcaVehiculo, modeloVehiculo: p_modeloVehiculo,
+    		},
+    		function(data) {
+    			$('#lineaVehiculo').html(data);
+    		});
+    	});
+    							
+    	$('body').on('change', '#lineaVehiculo', function(event) {
+    		event.preventDefault();
+    		// guardamos el valor en una variable
+    		var p_modeloVehiculo = $('#modeloVehiculo').val();
+    		var p_lineaVehiculo = $('#lineaVehiculo').val();
+    
+    		//enviamos los datos por post al archivo verMunicipios.php
+    		$.post(
+    			'/php/verVersion.php', {
+    			modeloVehiculo: p_modeloVehiculo, lineaVehiculo: p_lineaVehiculo,
+    		},
+    		function(data) {
+    			$('#versionVehiculo').html(data);
+    		});
+    	});
+    </script>
+
+<!--- Sección de Buscador --->
+
+<div class="seccion-vacia"></div>
+<footer>
+  <section class="mapaNavegacion">
+      <div class="container">
+          <div class="row align-items-center footer-mapa">
+<div class="col-md-7 position-relative"><img alt="" class="imagen-mapa" src="./index_files/portatil.png">
+<div class="mapa-footer"><iframe allowfullscreen="" aria-hidden="false" frameborder="0" height="350" src="./index_files/embed.html" tabindex="0" width="100%"></iframe></div>
+</div>
+
+<div class="col-md-5 texto-mapa">
+<h2 style="text-align: center;">LOCALIZA TU SERVITECA</h2>
+
+<div style="text-align: center;">Nuestras Servitecas están para brindarte servicios de montaje de llantas, alineación, balanceo, rectificación, cambio de aceite, baterías, frenos, suspensión y nitrógeno.<br>
+<a class="link ver-mas" href="https://autollantasnutibara.com/nuestras-sedes" tabindex="0">VISÍTANOS</a></div>
+</div>
+</div>
+      </div>
+  </section>
+  <div class="container">
+    <div class="row creditos">
+      <div class="col-md-12">
+        <div class="row">
+<div class="col-md-4"><span style="color:#ffc000;">NUESTRAS POLÍTICAS</span>
+<ul>
+	<li><a href="https://autollantasnutibara.com/fotos/documentos/politica-manejo-de-informacion-y-datos-personales-autollantas-nutibara.pdf" target="_blank">Política de tratamiento de datos (Habeas Data)</a></li>
+	<li><a href="https://autollantasnutibara.com/fotos/Image/Folleto-Llantas-Almacenes.pdf" target="_blank">Manual de Usuario Goodyear</a></li>
+	<li><a href="https://autollantasnutibara.com/fotos/Image/Manual-de-Usuario-Michelin.pdf" target="_blank">Manual de Usuario Michelin</a></li>
+	<li><a href="https://autollantasnutibara.com/fotos/documentos/terminos-y-condiciones-generales-nutriprivilegios.pdf" target="_blank">Nutriprivilegios</a></li>
+</ul>
+</div>
+
+<div class="col-md-4 text-left text-md-center"><span style="color:#ffc000;">ENLACES DE INTERÉS</span>
+
+<ul>
+	<li><a href="https://autollantasnutibara.com/productos">Productos</a></li>
+	<li><a href="https://autollantasnutibara.com/servicios">Servicios</a></li>
+	<li><a href="https://autollantasnutibara.com/noticias">Noticias</a></li>
+	<li><a href="https://autollantasnutibara.com/contactenos">Contactos</a></li>
+</ul>
+</div>
+
+<div class="col-md-4 text-center text-md-right">© 2010-2023&nbsp;AUTOLLANTAS NUTIBARA S.A<br>
+<strong><a href="mailto:info@autollantasnutibara.com">info@autollantasnutibara.com</a> - Medellín - Colombia</strong><br>
+Design/Framework: Fenix Punto Net - <a href="http://www.fenixpuntonet.com/" target="_blank">www.fenixpuntonet.com</a></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<div class="redes">
+  <nav class="redes-fixed">
+    
+          <a class="redes-header-ico" href="https://www.facebook.com/AutollantasNutibara/" target="_blank">
+            <i class="fa fa-facebook facebook"></i>
+          </a> 
+        
+          <a class="redes-header-ico" href="https://www.instagram.com/autollantasnutibara" target="_blank">
+            <i class="fa fa-instagram instagram"></i>                  
+          </a> 
+        
+          <a class="redes-header-ico" href="mailto:info@autolllantasnutibara.com" target="_blank">
+            <i class="fa fa-envelope mail"></i>                  
+          </a> 
+        
+          <a class="redes-header-ico pulse" href="https://api.whatsapp.com/send?phone=573225040552" target="_blank">
+            <i class="fa fa-whatsapp whatsapp"></i>
+          </a>
+          </nav>
+</div>
+
+
+<script type="text/javascript" src="./index_files/generales.js.descarga"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async="" src="./index_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NMLQGB36L8');
+</script>
+<script src="./index_files/slick.min.js.descarga" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./index_files/slick.css">
+<link rel="stylesheet" type="text/css" href="./index_files/slick-theme.css">
+
+<script>
+  // Boton flotante ir al inicio
+  $(document).ready(function(){		
+    $('.ir-arriba').click(function(){
+      $('body, html').animate({
+        scrollTop: '0px'
+      }, 500);
+    });
+   
+    $(window).scroll(function(){
+      if( $(this).scrollTop() > 0 ){
+        $('.ir-arriba').slideDown(500);
+      } else {
+        $('.ir-arriba').slideUp(500);
+      }
+    });
+
+
+    try{
+      document.getElementById('div-select').innerHTML = ''
+    }catch(error){}
+
+
+    // Crea dinamicamente el campo de busqueda
+    try {
+
+      document.getElementById("busqueda").innerHTML = '<p><i>BUSCAR</i></p>'
+
+      document.getElementById("busqueda").innerHTML += '<form id="formbusqueda" class="formbusqueda" action="/php/buscar.php" method="get"></form>'
+      document.getElementById("formbusqueda").innerHTML = '<a id="inputforma" href="javascript:;" onclick="document.getElementById(' + "'formbusqueda'" + ').submit();">';
+      document.getElementById("inputforma").innerHTML = '<i class="fa fa-search icobuscar"></i>'
+      document.getElementById("formbusqueda").innerHTML += '<input id="buscar" type="text" name="buscar" placeholder="Buscar..." class="texto-buscar"> ';
+    }catch(error){  }
+
+  });	
+</script>
+<script src="./index_files/MUvPEQ0LRt" async=""></script>      <!--- Sección de Creado por --->
+    </div>
+  </div>
+  <script type="text/javascript" src="./index_files/skrollr.js.descarga"></script>
+  <script>
+    window.onload = function() {
+      if(screen.width > 480) {
+        var s = skrollr.init({
+          forceHeight: false
+        });
+      }
+    };
+  </script>
+        <script>
+        $( document ).ready(function() {
+    		if(window.innerWidth <= 820) {
+        		$('#wrap-info1 .col-md-4').on('click', function(e) {
+        			e.preventDefault();
+                    if($(this).hasClass("mostrar-beneficio")) {
+                      $(this).removeClass("mostrar-beneficio");
+                    } else {
+                      $("#wrap-info1 .col-md-4").removeClass("mostrar-beneficio");
+                      $(this).addClass("mostrar-beneficio");
+                    }
+        		});
+    		}
+        });
+      </script>
+    <script src="./index_files/popper.min.js.descarga" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="./index_files/bootstrap.min.js.descarga" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./index_files/main.js.descarga"></script>
+  <script type="text/javascript" src="./index_files/custom.theme.isotope.js.descarga"></script>
+  <script type="text/javascript" src="./index_files/theme.pagebuilder.js.descarga"></script>
+
+<div id="jivo-iframe-container" style="opacity: 0; visibility: hidden; width: 0px; height: 0px; overflow: hidden;"><iframe src="./index_files/saved_resource.html" role="presentation" allow="autoplay" title="Jivochat" name="jivo_container" id="jivo_container" frameborder="no"></iframe></div><jdiv><jdiv class="globalClass_a0be global_ea3c __light_cf6c __blue_a25d"><jdiv translate="no" class="notranslate" style="animation-duration: 300ms; animation-timing-function: cubic-bezier(0.39, 0.24, 0.21, 0.99); animation-delay: 0s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: both; animation-play-state: running; animation-name: Label_CLOSE_WIDGET_e78c; display: block; z-index: 2147483646; position: fixed;"><jdiv class="label_f01e _bottom_d5d6 __show_cd2f notranslate" translate="no" id="jvlabelWrap" style="max-width: calc(-80px + 100vw); bottom: 0px; right: 40px; background: linear-gradient(95deg, rgb(255, 192, 0) 20%, rgb(255, 224, 86) 80%);"><jdiv class="labelStatus_af1e" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h20v20H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23222222%22%20stroke-width%3D%221.5%22%20d%3D%22M3%203h14a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H3a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23222222%22%20stroke-width%3D%221.5%22%20d%3D%22M16.074%207.064l-6.01%204.01-6.01-4.01%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv><jdiv class="hoverl_fcb0"><jdiv class="omnichannel_af44 bottom_fbee"></jdiv></jdiv><jdiv class="text_eea1 contentTransitionWrap_f339 _offline_b333" style="font-size: 15px; font-family: Arial, Arial; font-style: normal; color: rgb(34, 34, 34);">Envíenos un mensaje</jdiv><jdiv class="copy_c5ec"><jdiv class="logo_d5a7 _bottom_b1a5"><jdiv class="hoverBox_e6a4"></jdiv><jdiv class="logoIcon_c74c" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22108%22%20height%3D%2236%22%20viewBox%3D%220%200%20108%2036%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23222222%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.342%2011.967H.957c-.2%200-.4%200-.6.2%200%20.2-.198.2-.198.4v1.993c0%20.2%200%20.4.198.6.2.198.4.198.6.198h2.79v14.36c0%201.397-1.196%202.594-2.392%202.594h-.4c-.2%200-.398%200-.598.2-.2.2-.2.398-.2.598v1.994c0%20.2%200%20.4.2.6.2.198.4.198.6.198h.198c3.192%200%205.785-2.792%205.785-5.984V12.566c0-.2%200-.4-.2-.6h-.398m6.98%200H11.33c-.2%200-.2%200-.4.2s-.2.2-.2.4v14.76c0%20.2%200%20.398.2.598.2.2.4.2.598.2h1.795c.2%200%20.4%200%20.598-.2.2-.2.2-.4.2-.598v-14.76c0-.2%200-.4-.198-.6h-.6m17.154%200H28.88c-.598%200-.997.2-.997.4l-4.388%209.973-4.188-9.974c0-.4-.4-.4-.6-.4h-1.993c-.4%200-.598%200-.598.2-.2.2-.2.4%200%20.6l6.78%2015.357c.2.2.4.4.6.4h.2c.198%200%20.597-.2.597-.4l6.782-15.358c.2-.2.2-.4%200-.598-.2-.2-.4-.2-.6-.2m9.176-.4c-2.193.002-3.988.8-5.584%202.594-1.595%201.597-2.393%203.592-2.393%205.985%200%202.393.798%204.388%202.393%205.984%201.596%201.794%203.39%202.592%205.585%202.592s3.99-.798%205.586-2.593c1.596-1.796%202.394-3.79%202.394-5.985%200-2.393-.798-4.388-2.394-5.984-1.596-1.794-3.59-2.591-5.585-2.591m3.193%2012.165c-.798.998-1.995%201.596-3.192%201.596-1.395%200-2.392-.398-3.39-1.395-.797-.998-1.396-2.194-1.396-3.79%200-1.396.4-2.792%201.397-3.59.798-.997%201.995-1.396%203.39-1.396%201.398%200%202.395.398%203.193%201.395.797.997%201.396%202.194%201.396%203.59s-.6%202.593-1.397%203.59m19.147-.598c-.398-.4-.797-.2-.997%200l-.4.4-.597.597c-.2.2-.4.2-.6.4-.198.2-.597.398-.796.398-.4%200-.6.2-.998.2-1.396%200-2.393-.6-3.19-1.596-.8-.998-1.397-2.194-1.397-3.79%200-1.396.4-2.792%201.396-3.79.998-.997%201.996-1.396%203.392-1.396%201.197%200%202.194.6%203.19%201.596.4.4.8.4.998.2l1.197-1.197s0-.4-.4-.8c-1.395-1.794-3.39-2.79-5.584-2.79-2.194-.002-3.99.796-5.584%202.59-1.597%201.597-2.395%203.592-2.395%205.985%200%202.393.798%204.388%202.394%206.183%201.594%201.596%203.39%202.394%205.583%202.394%202.593%200%204.588-1.197%205.984-3.39.2-.4.2-.8-.2-1.198l-.997-.997m11.57-11.569c-1.597%200-2.993.6-4.59%201.796V4.986c0-.2%200-.4-.198-.598-.2-.2-.4-.2-.6-.2H66.38c-.2%200-.398%200-.598.2-.2.2-.2.4-.2.598v22.54c0%20.198%200%20.398.2.597.2.2.4.2.598.2h1.796c.598%200%20.797-.2.797-.798V17.353c.2-.6.8-.998%201.398-1.596.797-.598%201.795-.798%202.792-.798.997%200%201.795.398%202.393%201.196.6.798.798%201.795.798%203.19v8.378c0%20.2%200%20.4.2.6.2.198.4.198.6.198h1.794c.2%200%20.4%200%20.6-.2.198-.2.198-.398.198-.598v-8.177c-.2-5.386-2.194-7.979-6.183-7.979m20.144%201.995c-.4-.798-.997-1.197-1.596-1.596-.798-.4-1.795-.598-2.992-.598-1.994%200-3.79.398-5.385.996-.398.2-.597.4-.597.998l.4%201.396c.198.598.398.798.796.598a12.823%2012.823%200%200%201%204.388-.798c.997%200%201.595.2%201.994.798.4.598.598%201.596.4%202.793l-.4-.2c-.2%200-.598-.198-1.197-.198-.4.2-.797.2-1.396.2-1.995%200-3.392.398-4.588%201.395-1.197.997-1.596%202.194-1.596%203.79s.4%202.992%201.396%203.99c.998.996%202.194%201.395%203.59%201.395%201.796%200%203.39-.598%204.787-1.994l.398%201.196c.2.4.4.6.6.6h1.195c.2%200%20.4%200%20.6-.2.198-.2.198-.4.198-.6V18.75c0-1.198%200-2.195-.198-2.993-.2-.598-.4-1.396-.798-2.194M91.31%2023.735c-.2.4-.797.998-1.396%201.396-.798.4-1.396.6-2.194.6s-1.396-.2-1.795-.798c-.4-.4-.598-1.197-.598-1.795%200-.798.2-1.396.798-1.995.598-.4%201.396-.797%202.393-.797.598%200%201.197%200%201.795.2.6.198.997.198.997.398v2.792m16.555%202.793l-.598-1.596c-.2-.4-.4-.598-.997-.4a3.834%203.834%200%200%201-2.394.8c-.4%200-.798-.2-.997-.4-.2-.2-.4-.598-.4-1.396V14.96h4.19c.198%200%20.397%200%20.597-.2.2-.2.2-.4.2-.6v-1.594c0-.2%200-.4-.2-.6h-4.788V7.38c0-.2%200-.4-.2-.598-.2-.2-.398-.2-.598-.2h-1.994c-.2%200-.4%200-.6.2-.198.2-.198.398-.198.598v4.587h-1.795c-.4%200-.798.2-.798.798v1.396c0%20.2%200%20.4.2.6.2.2.398.2.598.2h1.795v8.975c0%201.595.2%202.792.798%203.59.598.798%201.595%201.197%202.99%201.197.8%200%201.597-.2%202.395-.4s1.396-.598%201.795-.797c.997-.2%201.197-.598.997-.997z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2362666c%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.94%2010.77C6.543.4.16%200%20.16%200c-.4%209.374%206.78%2010.77%206.78%2010.77z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv><jdiv class="fallback_c95f"></jdiv></jdiv></jdiv><jdiv class="leafCont_f8e9"><jdiv class="leaf_c898 _bottom_ee07"><jdiv class="cssLeaf_af3e" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2240%22%20viewBox%3D%220%200%2032%2040%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23ffe056%22%20d%3D%22M0%200h9.02L32%2033.196V40H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23ffe056%22%20d%3D%22M9%200c3.581.05%2023%205.42EYHgEzWEdjJgYKAu8VjC4DohVYUMbvZ6Ua45MgSaYBTFv3725expKB69YsjM6Utj99E6Sn3LpcxQ4mNrwfrJLM5NGbWiQ%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%235e5f61%22%20d%3D%22M9%200c3.581.05%2023%205.45PrWcWBvSAXGj8bD2EAcwLJEf6Bkfw9Y1EknVsZCggqiNixWMwTX9HNJQ24FVfuLa4t8eXt1HPA1iUitADJLCoS5ua3WQR2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></jdiv></jdiv><jdiv class="copyContainer_be2a"><jdiv class="copyright_b497 _bottom_a24e" style="background: linear-gradient(95deg, rgb(255, 192, 0) 20%, rgb(255, 224, 86) 80%);"><jdiv class="text_f228" style="color: rgb(34, 34, 34);"><a href="https://www.jivochat.es/i_sa/?utm_source=autollantasnutibara.com&amp;utm_medium=link&amp;utm_content=label_tooltip&amp;utm_campaign=from_widget" rel="nofollow noopener noreferrer" target="_blank" class="link_b718">Chat desarrollado por <jdiv class="logoIcon_fd08" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22108%22%20height%3D%2236%22%20viewBox%3D%220%200%20108%2036%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23222222%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.342%2011.967H.957c-.2%200-.4%200-.6.2%200%20.2-.198.2-.198.4v1.993c0%20.2%200%20.4.198.6.2.198.4.198.6.198h2.79v14.36c0%201.397-1.196%202.594-2.392%202.594h-.4c-.2%200-.398%200-.598.2-.2.2-.2.398-.2.598v1.994c0%20.2%200%20.4.2.6.2.198.4.198.6.198h.198c3.192%200%205.785-2.792%205.785-5.984V12.566c0-.2%200-.4-.2-.6h-.398m6.98%200H11.33c-.2%200-.2%200-.4.2s-.2.2-.2.4v14.76c0%20.2%200%20.398.2.598.2.2.4.2.598.2h1.795c.2%200%20.4%200%20.598-.2.2-.2.2-.4.2-.598v-14.76c0-.2%200-.4-.198-.6h-.6m17.154%200H28.88c-.598%200-.997.2-.997.4l-4.388%209.973-4.188-9.974c0-.4-.4-.4-.6-.4h-1.993c-.4%200-.598%200-.598.2-.2.2-.2.4%200%20.6l6.78%2015.357c.2.2.4.4.6.4h.2c.198%200%20.597-.2.597-.4l6.782-15.358c.2-.2.2-.4%200-.598-.2-.2-.4-.2-.6-.2m9.176-.4c-2.193.002-3.988.8-5.584%202.594-1.595%201.597-2.393%203.592-2.393%205.985%200%202.393.798%204.388%202.393%205.984%201.596%201.794%203.39%202.592%205.585%202.592s3.99-.798%205.586-2.593c1.596-1.796%202.394-3.79%202.394-5.985%200-2.393-.798-4.388-2.394-5.984-1.596-1.794-3.59-2.591-5.585-2.591m3.193%2012.165c-.798.998-1.995%201.596-3.192%201.596-1.395%200-2.392-.398-3.39-1.395-.797-.998-1.396-2.194-1.396-3.79%200-1.396.4-2.792%201.397-3.59.798-.997%201.995-1.396%203.39-1.396%201.398%200%202.395.398%203.193%201.395.797.997%201.396%202.194%201.396%203.59s-.6%202.593-1.397%203.59m19.147-.598c-.398-.4-.797-.2-.997%200l-.4.4-.597.597c-.2.2-.4.2-.6.4-.198.2-.597.398-.796.398-.4%200-.6.2-.998.2-1.396%200-2.393-.6-3.19-1.596-.8-.998-1.397-2.194-1.397-3.79%200-1.396.4-2.792%201.396-3.79.998-.997%201.996-1.396%203.392-1.396%201.197%200%202.194.6%203.19%201.596.4.4.8.4.998.2l1.197-1.197s0-.4-.4-.8c-1.395-1.794-3.39-2.79-5.584-2.79-2.194-.002-3.99.796-5.584%202.59-1.597%201.597-2.395%203.592-2.395%205.985%200%202.393.798%204.388%202.394%206.183%201.594%201.596%203.39%202.394%205.583%202.394%202.593%200%204.588-1.197%205.984-3.39.2-.4.2-.8-.2-1.198l-.997-.997m11.57-11.569c-1.597%200-2.993.6-4.59%201.796V4.986c0-.2%200-.4-.198-.598-.2-.2-.4-.2-.6-.2H66.38c-.2%200-.398%200-.598.2-.2.2-.2.4-.2.598v22.54c0%20.198%200%20.398.2.597.2.2.4.2.598.2h1.796c.598%200%20.797-.2.797-.798V17.353c.2-.6.8-.998%201.398-1.596.797-.598%201.795-.798%202.792-.798.997%200%201.795.398%202.393%201.196.6.798.798%201.795.798%203.19v8.378c0%20.2%200%20.4.2.6.2.198.4.198.6.198h1.794c.2%200%20.4%200%20.6-.2.198-.2.198-.398.198-.598v-8.177c-.2-5.386-2.194-7.979-6.183-7.979m20.144%201.995c-.4-.798-.997-1.197-1.596-1.596-.798-.4-1.795-.598-2.992-.598-1.994%200-3.79.398-5.385.996-.398.2-.597.4-.597.998l.4%201.396c.198.598.398.798.796.598a12.823%2012.823%200%200%201%204.388-.798c.997%200%201.595.2%201.994.798.4.598.598%201.596.4%202.793l-.4-.2c-.2%200-.598-.198-1.197-.198-.4.2-.797.2-1.396.2-1.995%200-3.392.398-4.588%201.395-1.197.997-1.596%202.194-1.596%203.79s.4%202.992%201.396%203.99c.998.996%202.194%201.395%203.59%201.395%201.796%200%203.39-.598%204.787-1.994l.398%201.196c.2.4.4.6.6.6h1.195c.2%200%20.4%200%20.6-.2.198-.2.198-.4.198-.6V18.75c0-1.198%200-2.195-.198-2.993-.2-.598-.4-1.396-.798-2.194M91.31%2023.735c-.2.4-.797.998-1.396%201.396-.798.4-1.396.6-2.194.6s-1.396-.2-1.795-.798c-.4-.4-.598-1.197-.598-1.795%200-.798.2-1.396.798-1.995.598-.4%201.396-.797%202.393-.797.598%200%201.197%200%201.795.2.6.198.997.198.997.398v2.792m16.555%202.793l-.598-1.596c-.2-.4-.4-.598-.997-.4a3.834%203.834%200%200%201-2.394.8c-.4%200-.798-.2-.997-.4-.2-.2-.4-.598-.4-1.396V14.96h4.19c.198%200%20.397%200%20.597-.2.2-.2.2-.4.2-.6v-1.594c0-.2%200-.4-.2-.6h-4.788V7.38c0-.2%200-.4-.2-.598-.2-.2-.398-.2-.598-.2h-1.994c-.2%200-.4%200-.6.2-.198.2-.198.398-.198.598v4.587h-1.795c-.4%200-.798.2-.798.798v1.396c0%20.2%200%20.4.2.6.2.2.398.2.598.2h1.795v8.975c0%201.595.2%202.792.798%203.59.598.798%201.595%201.197%202.99%201.197.8%200%201.597-.2%202.395-.4s1.396-.598%201.795-.797c.997-.2%201.197-.598.997-.997z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2362666c%22%20fill-rule%3D%22evenodd%22%20d%3D%22M6.94%2010.77C6.543.4.16%200%20.16%200c-.4%209.374%206.78%2010.77%206.78%2010.77z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></a></jdiv><jdiv class="corner_cf92" style="border-top-color: rgb(255, 224, 86);"></jdiv></jdiv></jdiv></jdiv></jdiv><jdiv id="jivo-player" class="player_eefa"><audio preload="auto" id="jivo-sound-agent_message"><source src="https://code.jivosite.com/sounds/agent_message.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/agent_message.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/agent_message.wav" type="audio/wav"></audio><audio preload="auto" id="jivo-sound-notification"><source src="https://code.jivosite.com/sounds/notification.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/notification.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/notification.wav" type="audio/wav"></audio><audio preload="auto" id="jivo-sound-outgoing_message"><source src="https://code.jivosite.com/sounds/outgoing_message.mp3" type="audio/mpeg"><source src="https://code.jivosite.com/sounds/outgoing_message.ogg" type="audio/ogg; codecs=vorbis"><source src="https://code.jivosite.com/sounds/outgoing_message.wav" type="audio/wav"></audio></jdiv><jdiv id="jcont" translate="no" class="notranslate" style="animation-duration: 300ms; animation-timing-function: cubic-bezier(0.39, 0.24, 0.21, 0.99); animation-delay: 0s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: both; animation-play-state: running; animation-name: WidgetContainer_CLOSE_WIDGET_c0af; --jright: 30px; --jheight: 42EYHgEzWEdjJgYKAu8VjC4DohVYUMbvZ6Ua45MgSaYBTFv3725expKB69YsjM6Utj99E6Sn3LpcxQ4mNrwfrJLM5NGbWiQ="wrap_a219" dir="ltr" id="jivo_action"><jdiv class="closeButton_a2d5" id="jivo_close_button"><jdiv class="closeIcon_e5c5" style="background-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate(2%202)%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%20fill%3D%22%23FFF%22%20opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212.75%22%20stroke%3D%22%23222D38%22%20stroke-width%3D%221.5%22%20opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20fill%3D%22%23222D38%22%20opacity%3D%221%22%20transform%3D%22translate(6%206)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%221.611%22%20height%3D%2213.9%22%20x%3D%225.435%22%20y%3D%22-.941%22%20rx%3D%22.806%22%20transform%3D%22rotate(45PrWcWBvSAXGj8bD2EAcwLJEf6Bkfw9Y1EknVsZCggqiNixWMwTX9HNJQ24FVfuLa4t8eXt1HPA1iUitADJLCoS5ua3WQR20height%3D%2213.9%22%20x%3D%225.45PrWcWBvSAXGj8bD2EAcwLJEf6Bkfw9Y1EknVsZCggqiNixWMwTX9HNJQ24FVfuLa4t8eXt1HPA1iUitADJLCoS5ua3WQR058)%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A&quot;);"></jdiv></jdiv></jdiv></jdiv><jdiv class="pseudoHeight_b3e8"></jdiv><jdiv class="jivoMouseTrack_c1a1"></jdiv></jdiv></jdiv></body></html>
